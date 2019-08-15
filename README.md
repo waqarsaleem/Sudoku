@@ -41,7 +41,8 @@ The code models a `Cell`. A `Board` is a 9x9 grid of `Cell` instances. The 9 row
 
 - _Documentation_. The code needs to be perused, understood, and meaingfully documented.
 - _Best practices_. Some code can be replaced with python best practices like
-    - [`property`](https://www.programiz.com/python-programming/property), 
+
+    - using python's [`property`](https://www.programiz.com/python-programming/property) for relevant attributes.
 	- replacing `range` in `for` loops with custom iterables, as described in [this PyCon 2017 talk](https://youtu.be/u8g9scXeAcI).
 	- Simplify some of the code in a more idiomatic manner.
 	- Many of these are listed in the code as _TODO_s.
