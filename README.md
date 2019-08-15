@@ -1,6 +1,6 @@
 # Sudoku Solver
 
-This is a program to solve a [Sudoku](https://en.wikipedia.org/wiki/Sudoku) puzzle. The entire program is in the file `sudoku.py`.
+This is a program to solve a [Sudoku](https://en.wikipedia.org/wiki/Sudoku) puzzle. The entire program is in the file `sudoku.py`. It is meant as a testbed for interested [Computer Science](https://habib.edu.pk/academics/sse/computer-science/) students at [Habib University](https://habib.edu.pk) to practice code collaboration and contribution to open source.
 
 To use the program,
 
