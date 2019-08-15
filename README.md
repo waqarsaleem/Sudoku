@@ -39,16 +39,18 @@ The code models a `Cell`. A `Board` is a 9x9 grid of `Cell` instances. The 9 row
 
 ## Contributions
 
+Here are some ways you can contribute.
+
 - _Documentation_. The code needs to be perused, understood, and meaingfully documented.
 - _Best practices_. Some code can be replaced with python best practices like
 
     - using python's [`property`](https://www.programiz.com/python-programming/property) for relevant attributes.
 	- replacing `range` in `for` loops with custom iterables, as described in [this PyCon 2017 talk](https://youtu.be/u8g9scXeAcI).
 	- Simplify some of the code in a more idiomatic manner.
-	- Many of these are listed in the code as _TODO_s.
+	- Many of these are listed in the code as _TODO_'s.
 - _Unit tests_. To verify the correctness of the code.
 - _Board initialization_. A more convenient way to intialize the board. Currently each cell is initialized individually, as in `set_sample_board`.
-- _Miscellaneous_. Any other  _TODO_s in the code.
+- _Miscellaneous_. Any other  _TODO_'s in the code.
 - _Adding strategies_ (HARD). There is currently only one strategy and it is hardcoded. We would like to be able to encode various strategies and choose which ones to apply. The [_Strategy Pattern_](https://en.wikipedia.org/wiki/Strategy_pattern) may help, at least the name implies so!
 - _GUI_ (HARD). A GUI implemntation.
 - _Other_. Any other useful features you can think of.
