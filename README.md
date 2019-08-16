@@ -35,7 +35,7 @@ The puzzle is solved when every row, column, and block contains only 1 occurrenc
 
 ## Code Details
 
-The code models a `Cell`. A `Board` is a 9x9 grid of `Cell` instances. The 9 rows are numbered 0 to 8 from top to bottom and the 9 columns are numbered 0 to 8 from left to right. A `Sudoku` is essentially a `Board` with certain rules enforced on it. The [_Observer pattern_](https://stackoverflow.com/questions/6190468/how-to-trigger-function-on-value-change) is used to implement the logic above. This is in the form of a list of `observer`s in `Cell` which are _bound_ in the `Sudoku` class.
+The code models a `Cell` which has 9 _possiblities_ by default. As the game proceeds, some possibilities will be removed. Eventually, one of the possibilties will be chosen as the _value_ of the cell and the cell will be _set_ to the value. Some cells are set as part of the initialization of the game. A `Board` is a 9x9 grid of `Cell` instances. The 9 rows are numbered 0 to 8 from top to bottom and the 9 columns are numbered 0 to 8 from left to right. A `Sudoku` is essentially a `Board` with certain rules enforced on it. The [_Observer pattern_](https://stackoverflow.com/questions/6190468/how-to-trigger-function-on-value-change) is used to implement the logic above. This is in the form of a list of _observer_'s in `Cell` which are _bound_ in the `Sudoku` class.
 
 ## Contributions
 
