@@ -233,6 +233,15 @@ class Sudoku:
         if not self.is_solved():
             self.solve()
 
+def read_boardfile(filename,sudoku):
+    filecontent = [i.strip() for i in open(filename,'r').readlines()]
+    for i in range(0,len(filecontent)):
+        for j in range(0,len(filecontent[i])):
+            if(filecontent[i][j]=='0'):
+                continue
+            sudoku.set_cell(i,j,int(filecontent[i][j]))
+
+
 def set_sample_board(sudoku):
     sudoku.set_cell(0,5,9)
     sudoku.set_cell(1,0,6)
@@ -277,4 +286,7 @@ def set_sample_board(sudoku):
     sudoku.set_cell(8,8,3)
     
 sudoku = Sudoku()
-set_sample_board(sudoku)
+
+read_boardfile("board.txt",sudoku)
+#set_sample_board(sudoku)
+print(sudoku)
